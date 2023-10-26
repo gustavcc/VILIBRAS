@@ -302,7 +302,7 @@ main {
 }
 
 .main h1 {
-    padding-bottom: 5%;
+    padding-bottom: 30px;
     font-size: 26pt;
     font-weight: 600;
     background-image: linear-gradient(to right bottom, #031926, #009dff, #00143d);
@@ -331,8 +331,7 @@ main {
 .btn {
     background: #fff;
     color: #222;
-    border: none;
-    font-weight: 600;
+    font-weight: 500;
     width: 100%;
     border: 1px solid #000;
     padding: 10px;
@@ -341,32 +340,37 @@ main {
     cursor: pointer;
     text-align: left;
     transition: all .3s;
+    box-sizing: border-box;
 }
 
-.btn:hover {
-    background: #031926;
-    color: #fff;
+.btn:hover:not([disabled]) {
+    border: 1px solid #009dff;
+    color: #00143d;
+}
+
+.btn:disabled{
+    cursor: no-drop;
 }
 
 #next-btn {
-    background: #009dff;
-    color: #222;
+    background-image: linear-gradient(to right bottom, #031926, #04215b, #009dff);
+    color: #fff;
     border: none;
     font-weight: 600;
     width: 150px;
     padding: 10px;
     border-radius: 10px;
-    margin: 20px auto 0;
+    margin: 30px auto 0;
     cursor: pointer;
     display: none;
 }
 
 .correct {
-    background: #9aeabc;
+    background: #58de92;
 }
 
 .incorrect {
-    background: #ff9393;
+    background: #fc6060;
 }
 
 /* main  */
