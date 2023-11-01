@@ -142,6 +142,17 @@ nav a:hover::before {
     justify-content: flex-end;
 }
 
+.user {
+    width: 40px;
+    height: 40px;
+    background: #000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
 .icon-user {
     color: #faebd7;
     font-size: 24px;
@@ -209,6 +220,10 @@ a {
     #closeMenu {
         display: block
             /*aparecer quando diminuir a tela */
+    }
+
+    .user {
+        margin-right: 10px;
     }
 
     * nav {

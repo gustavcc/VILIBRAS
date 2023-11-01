@@ -18,20 +18,20 @@ footer {
     display: flex;
 }
 
-  
-  * ::-webkit-scrollbar {
+
+* ::-webkit-scrollbar {
     width: 12px;
-  }
-  
-  * ::-webkit-scrollbar-track {
+}
+
+* ::-webkit-scrollbar-track {
     background: white;
-  }
-  
-  * ::-webkit-scrollbar-thumb {
+}
+
+* ::-webkit-scrollbar-thumb {
     background-color: #031926;
     border-radius: 10px;
-  }
-  
+}
+
 header {
     flex: 1 1 100vw;
     height: 100px;
@@ -93,7 +93,8 @@ nav a::before {
     border-bottom: 3px solid transparent;
     width: 0%;
     box-sizing: border-box;
-    transition: all 0.5s ease; /*! transição*/
+    transition: all 0.5s ease;
+    /*! transição*/
 }
 
 /*! adicionar elemento após do nav a ser executado */
@@ -127,6 +128,17 @@ nav a:hover::before {
     justify-content: flex-end;
 }
 
+.user {
+    width: 40px;
+    height: 40px;
+    background: #000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
 .icon-user {
     color: #faebd7;
     font-size: 24px;
@@ -150,7 +162,7 @@ nav a:hover::before {
     outline: none;
     border: none;
     font-size: 12pt;
-    padding-left: 10px; 
+    padding-left: 10px;
     width: 0px;
     transition: all .5s;
 }
@@ -189,6 +201,10 @@ a {
     #closeMenu {
         display: block
             /*aparecer quando diminuir a tela */
+    }
+
+    .user {
+        margin-right: 10px;
     }
 
     * nav {
@@ -281,14 +297,16 @@ a {
     border-radius: 20px;
 }
 
-.receivers{
+.receivers {
     display: flex;
     height: 200px;
     flex-direction: column;
     align-items: center;
 }
 
-.receivers input, .receivers textarea, .receivers button{
+.receivers input,
+.receivers textarea,
+.receivers button {
     border: solid 0.9px;
     border-radius: 6px;
     background-color: #efece9;
@@ -297,21 +315,23 @@ a {
 }
 
 
-.receivers input, .receivers textarea, .receivers button{
+.receivers input,
+.receivers textarea,
+.receivers button {
     padding: 3px;
     margin: 3px;
 }
 
-#divTextarea{
+#divTextarea {
     display: flex;
     margin-top: 10px;
 }
 
-#divTextarea label{
+#divTextarea label {
     align-items: center;
 }
 
-#div-buttons{
+#div-buttons {
     display: flex;
     justify-content: flex-end;
     width: 100%;
@@ -326,7 +346,7 @@ a {
     font-weight: bold;
 }
 
-.close:hover{
+.close:hover {
     color: #000;
     text-decoration: none;
     cursor: pointer;
