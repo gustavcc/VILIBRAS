@@ -655,7 +655,7 @@ span {
     #inscription {
         width: 200px;
         top: 200px;
-        right: calc(100vw - 80vw);
+        right: calc(59% - 150px);
     }
 
     #inscription a {

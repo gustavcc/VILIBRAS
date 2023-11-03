@@ -11,19 +11,19 @@ const questoes = [
     {
         questao: "O que é Software?",
         respostas: [
-            { text: "Peças como mouse e teclado", correct: false},
-            { text: "Parte lógica do computador", correct: true},
-            { text: "Parte física do computador", correct: false},
-            { text: "Nenhuma alternativa", correct: false},
+            { text: "A) Peças como mouse e teclado", correct: false},
+            { text: "B) Parte lógica do computador", correct: true},
+            { text: "C) Parte física do computador", correct: false},
+            { text: "D) Nenhuma alternativa", correct: false},
         ]
     },
     {
         questao: "O que é Hardware?",
         respostas: [
-            { text: "Aplicativos, sites e programas", correct: false},
-            { text: "Parte lógica do computador", correct: false},
-            { text: "Parte física do computador", correct: true},
-            { text: "Nenhuma alternativa", correct: false},
+            { text: "A) Aplicativos, sites e programas", correct: false},
+            { text: "B) Parte lógica do computador", correct: false},
+            { text: "C) Parte física do computador", correct: true},
+            { text: "D) Nenhuma alternativa", correct: false},
         ]
     }
 ];
