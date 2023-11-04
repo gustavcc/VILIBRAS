@@ -129,14 +129,20 @@ nav a:hover::before {
 }
 
 .user {
-    width: 40px;
-    height: 40px;
+    width: 47px;
+    height: 47px;
     background: #000;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 10px;
+    box-sizing: border-box;
+    border: none;
+}
+
+.user:hover {
+    border: 1.5px solid #faebd7;
 }
 
 .icon-user {
@@ -149,7 +155,7 @@ nav a:hover::before {
 
 .search-box {
     background: #fff;
-    height: 40px;
+    height: 47px;
     padding: 5px;
     border-radius: 40px;
 

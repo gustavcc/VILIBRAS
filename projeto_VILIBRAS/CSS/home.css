@@ -142,15 +142,21 @@ nav a:hover::before {
     justify-content: flex-end;
 }
 
-.user {
-    width: 40px;
-    height: 40px;
+#user {
+    width: 47px;
+    height: 47px;
     background: #000;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 10px;
+    box-sizing: border-box;
+    border: none;
+}
+
+#user:hover {
+    border: 1.5px solid #faebd7;
 }
 
 .icon-user {
@@ -163,7 +169,7 @@ nav a:hover::before {
 
 .search-box {
     background: #fff;
-    height: 40px;
+    height: 47px;
     padding: 5px;
     border-radius: 40px;
 
@@ -217,7 +223,7 @@ a {
             /*aparecer quando diminuir a tela */
     }
 
-    .user {
+    #user {
         margin-right: 10px;
     }
 
@@ -653,6 +659,7 @@ span {
 
 @media only screen and (max-width:510px){
     #inscription {
+        display: none;
         width: 200px;
         top: 200px;
         right: calc(59% - 150px);
@@ -664,7 +671,7 @@ span {
     }
 
     .libras-main {
-        height: 500px;
+        height: autoF;
         justify-content: end;
     }
 }
