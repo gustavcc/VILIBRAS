@@ -325,24 +325,22 @@ aside {
     border-radius: 20px;
 }
 
-.slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20px;
-}
-
-.slide {
+.slides {
     width: 100%;
     height: 450px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
 }
 
 #containerSlide {
     width: 100%;
     height: 100%;
+}
+
+#containerSlide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .recepcao {
@@ -391,7 +389,6 @@ aside {
 }
 
 .box-questoes {
-    z-index: 1;
     width: 50%;
     height: 100%;
     box-shadow: 0px 0px 50px #b0b0b0;
@@ -412,13 +409,17 @@ aside {
     color: #ffffff;
 }
 
+.box-questoes:hover{
+    transition: all .2s linear;
+    transform: translateY(-5px);
+}
+
 .box-questoes i {
     font-size: 30pt;
     color: #898989;
 }
 
 .box-duvidas {
-    z-index: 1;
     width: 50%;
     height: 100%;
     box-shadow: 0px 0px 50px #b0b0b0;
@@ -444,6 +445,158 @@ aside {
     color: #ffffff;
 }
 
+.box-duvidas:hover{
+    transition: all .2s linear;
+    transform: translateY(-5px);
+}
+
+.dicionario {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-dicionario {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 50px #b0b0b0;
+    background: #ffffff;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.box-dicionario i {
+    font-size: 30pt;
+    color: #898989;
+}
+
+.box-dicionario:hover #icon-t {
+    background-image: linear-gradient(to right bottom, #55bbf6, #005d97);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #ffffff;
+}
+
+.box-dicionario:hover{
+    transition: all .2s linear;
+    transform: translateY(-5px);
+}
+
+.aulas {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-aulas {
+    width: 50%;
+    height: 100%;
+    box-shadow: 0px 0px 50px #b0b0b0;
+    background: #ffffff;
+    border-radius: 20px;
+    margin: 0 20px 0 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.box-aulas i {
+    font-size: 30pt;
+    color: #898989;
+}
+
+.box-aulas:hover #icon-a {
+    background-image: linear-gradient(to right bottom, #55bbf6, #005d97);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #ffffff;
+}
+
+.box-aulas:hover{
+    transition: all .2s linear;
+    transform: translateY(-5px);
+}
+
+.categorias {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cima {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    margin: 0 0 20px 0;
+}
+
+.baixo {
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+
+.box-cat-1 {
+    width: 50%;
+    height: 100%;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    box-shadow: 0px 0px 50px #b0b0b0;
+    margin: 0 20px 0 0;
+}
+
+.box-cat-2 {
+    width: 50%;
+    height: 100%;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    box-shadow: 0px 0px 50px #b0b0b0;
+}
+
+.box-cat-3 {
+    width: 50%;
+    height: 100%;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    box-shadow: 0px 0px 50px #b0b0b0;
+    margin: 0 20px 0 0;
+}
+
+.box-cat-4 {
+    width: 50%;
+    height: 100%;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    box-shadow: 0px 0px 50px #b0b0b0;
+}
+
 
 .title {
     padding: 20px 0 20px 0;
@@ -456,7 +609,7 @@ aside {
 }
 
 .text {
-    font-size: 14pt;
+    font-size: 16pt;
     color: #626262;
 }
 
