@@ -14,6 +14,17 @@
 </head>
 
 <body>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+        </div>
+
+            <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
     <header>
         <div id="logo">
             <a href="dashboard.html">VILIBRAS</a>
@@ -44,41 +55,18 @@
     </header>
 
     <main>
-        <section class="slides">
-            <div id="containerSlide">
-                <img src="IMG/slide 1.jpg" class="imgs">
-                <img src="IMG/slide 2.jpg" class="imgs">
-                <img src="IMG/slide 3.jpg" class="imgs">
-                <img src="IMG/slide 4.jpg" class="imgs">
-            </div>
+        <section id="slide" class="carrossel">
+            <div class="containerSlide" id="imagens">
+                <!-- <div id="slide-img-1"></div>
+                <div id="slide-img-2"></div>
+                <div id="slide-img-3"></div>
+                <div id="slide-img-4"></div> -->
 
-            <!-- ! Bootstrap -->
-            <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="d-block w-100" src=".../800x400?auto=yes&bg=777&fg=555&text=Primeiro Slide" alt="Primeiro Slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src=".../800x400?auto=yes&bg=666&fg=444&text=Segundo Slide" alt="Segundo Slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src=".../800x400?auto=yes&bg=555&fg=333&text=Terceiro Slide" alt="Terceiro Slide">
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Anterior</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Próximo</span>
-                </a>
-            </div> -->
+                <img src="IMG/SL-113022-54210-35.jpg" class="imgs">
+                <img src="IMG/uyfydu6.jpg" class="imgs">
+                <img src="IMG/69603047_uyfydu4.jpg" class="imgs">
+                <img src="IMG//13777983_gradient_2.jpg" class="imgs">
+            </div>
         </section>
         <section class="recepcao">
             <div class="text-recepcao">
@@ -113,21 +101,16 @@
                 <i id="icon-a" class="fa-solid fa-users-rectangle"></i>
                 <p class="text">Dicionário de tradução</p>
             </a>
-            <div class="categorias">
-                <div class="cima">
-                    <div class="box-cat-1">1</div>
-                    <div class="box-cat-2">2</div>
-                </div>
-                <div class="baixo">
-                    <div class="box-cat-3">3</div>
-                    <div class="box-cat-4">4</div>
-                </div>
-            </div>
         </section>
     </main>
     <aside>
         <section class="perfil">
-
+            <p class="text">Perfil de Usuário</p>
+            <img src="IMG/user_657052.png" alt="">
+            <p class="user-perfil">Danyele de Oliveira Santana</p>
+            <div class="calender">
+                <p>Calender</p>
+            </div>
         </section>
     </aside>
 
