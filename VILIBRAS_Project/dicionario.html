@@ -12,45 +12,46 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
         <div vw-plugin-wrapper>
-            <div class="vw-plugin-top-wrapper"></div>
+          <div class="vw-plugin-top-wrapper"></div>
         </div>
         </div>
 
             <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
       <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');
-      </script>
+      </script>
 
-    <header>
-        <div id="logo">
-            <a href="dashboard.html">VILIBRAS</a>
-            <a href="dashboard.html"><img src="img/Logo VILIBRAS.png" alt="logo"></a>
+<header>
+    <div id="logo">
+        <a href="dicionario.html">VILIBRAS</a>
+        <a href="dicionario.html"><img src="img/Logo VILIBRAS.png" alt="logo"></a>
+    </div>
+
+    <nav id="menu">
+        <button id="closeMenu"><i class="fa-solid fa-xmark"></i></button>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="aulas.html">Aulas</a>
+        <a href="questoes.html">Questões</a>
+        <a href="faq.html">FAQ</a>
+    </nav>
+
+    <div id="nav-right">
+        <div class="search-box">
+            <input type="text" class="search-text" placeholder="Pesquisar...">
+            <a class="search-btn" href="#">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
         </div>
-
-        <nav id="menu">
-            <button id="closeMenu"><i class="fa-solid fa-xmark"></i></button>
-            <a href="dashboard.html">Dashboard</a>
-            <a href="aulas.html">Aulas</a>
-            <a href="questoes.html">Questões</a>
-            <a href="faq.html">FAQ</a>
-        </nav>
-
-        <div id="nav-right">
-            <div class="search-box">
-                <input type="text" class="search-text" placeholder="Pesquisar...">
-                <a class="search-btn" href="#">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </a>
-            </div>
-            <div class="user">
-                <a class="icon-user" href="perfil.html" target="_blank"><i class="fa-solid fa-user"></i></a>
-            </div>
-            <button id="openMenu"><i class="fa-solid fa-bars"></i></button>
+        <div class="user">
+            <a class="icon-user" href="perfil.html" target="_blank"><i class="fa-solid fa-user"></i></a>
         </div>
-    </header>
+        <button id="openMenu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+</header>
 
 <main>
 
@@ -66,7 +67,7 @@
             <h1>Hardware</h1>
             <p>O hardware são os componentes físicos do computador, permitindo o funcionamento do mesmo de forma correta e com o melhor aproveitamento possível, sendo algo que detém grande relevância e destaque no contexto.</p>
             <div class="link-a">
-                <a href="hardware.html" class="link-a-content" target="_blank">Acessar</a>
+                <a href="hardware.html" class="link-a-content">Acessar</a>
             </div>
         </div>
 
@@ -80,31 +81,39 @@
             <h1>Software</h1>
             <p>Software é o conjunto de programas, aplicativos e instruções que controlam e coordenam as operações de um computador. É a parte que permite o hardware executar tarefas e funcione de acordo com as necessidades do usuário.</p>
             <div class="link-a">
-                <a href="" class="link-a-content">Acessar</a>
+                <a href="software.html" class="link-a-content">Acessar</a>
             </div>
         </div>
         <div class="img">
             <img src="IMG/software.jpg" alt="Software">
         </div>
     </div>
+    
+    </div>
 
     <div class="Dictionary-Apresentation">
         <div class="text">
-            <h1>Programação</h1>
-            <p>A programação é formada por algoritmos, que são passos lógicos e finitos para a resolução de determinados problemas. Essa habilidade viabiliza o exercício de diversas profissões, destacando sua importância para a comunidade.</p>
+            <h1>Conectividades</h1>
+            <p>Conectividades abrange os meios e métodos que viabilizam a interligação e comunicação entre dispositivos. Enquanto a conectividade se refere aos diferentes modos de interconexão, os protocolos e técnicas associados delineiam a transmissão eficiente de dados nesse ambiente interconectado.</p>
             <div class="link-a">
-                <a href="" class="link-a-content">Acessar</a>
+                <a href="conectividades.html" class="link-a-content">Acessar</a>
             </div>
         </div>
         <div class="img">
-            <img src="IMG/programacao.jpg" alt="Programação">
+            <img src="IMG/redes_conectividades.jpg" alt="Programação">
         </div>
     </div>
 
     <div class="Dictionary-Apresentation">
         <div class="text">
-            <h1>Redes e Conectividades</h1>
-            <p></p>
+            <h1>Armazenamento de Dados</h1>
+            <p>Armazenamento de dados refere-se à prática de guardar informações de maneira organizada, permitindo o acesso eficiente e seguro quando necessário. Esse processo envolve a utilização de sistemas e recursos específicos para preservar e gerenciar dados, garantindo sua integridade ao longo do tempo </p>
+            <div class="link-a">
+                <a href="armazenamento.html" class="link-a-content">Acessar</a>
+            </div>
+        </div>
+        <div class="img">
+            <img src="IMG/armazenamento_dados.jpeg" alt="Programação">
         </div>
     </div>
        
@@ -121,7 +130,7 @@
     <div class="footer-item">
         <h2>Ajuda</h2>
         <p><a href="faq.html">FAQ</a></p>
-        <p><a href="faq.html">Enviados</a></p>
+        <p><a href="#">Enviados</a></p>
     </div>
     <div class="footer-item social">
         <h2> Siga-nos </h2>
@@ -146,7 +155,6 @@
 
 </script>
 
-</script>
 
 
 </body>

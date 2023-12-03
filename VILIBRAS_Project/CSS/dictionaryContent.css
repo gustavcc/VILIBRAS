@@ -12,7 +12,6 @@ body {
   flex-wrap: wrap;
 }
 
-body,
 header,
 nav,
 main,
@@ -45,6 +44,10 @@ header {
   top: -5px;
 }
 
+#seta{
+  align-self: flex-start;
+}
+
 #logo {
   flex: 0 1 350px;
   font-size: 26pt;
@@ -60,69 +63,6 @@ header {
 #logo img {
   width: 90px;
   padding: 10px
-}
-
-nav {
-  flex: 1 1 100vw;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-#openMenu,
-#closeMenu {
-  border: none;
-  background: none;
-  font-size: 30px;
-  font-weight: bold;
-  /*espessura da fonte*/
-  padding: 0px, 5px, 0px, 5px;
-  cursor: pointer;
-  display: none;
-  color: #faebd7;
-}
-
-nav a {
-  color: #faebd7;
-  padding: 10px;
-  margin: 5px;
-  font-size: 16pt;
-  transition: all 0.5s;
-  position: relative;
-}
-
-/*! adicionar elemento antes do nav a ser executado */
-nav a::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  border-bottom: 3px solid transparent;
-  width: 0%;
-  box-sizing: border-box;
-  transition: all 0.5s ease;
-  /*! transição*/
-}
-
-/*! adicionar elemento após do nav a ser executado */
-/* nav a::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    border-top: 3px solid transparent;
-    width: 0%;
-    box-sizing: border-box;
-    transition: all 0.5s ease;
-} */
-
-/* nav a:hover::after {
-    border-color: #faebd7;
-    width: 100%;
-} */
-
-nav a:hover::before {
-  border-color: #faebd7;
-  width: 100%;
 }
 
 #nav-right {
@@ -201,57 +141,6 @@ a {
   color: inherit;
 }
 
-@media only screen and (max-width: 972px) {
-
-  #openMenu,
-  #closeMenu {
-    display: block
-      /*aparecer quando diminuir a tela */
-  }
-
-  * nav {
-    position: fixed;
-    /*fica sobreposto, fixo aos outros elemntos*/
-    flex-direction: column;
-    width: 100vw;
-    height: 100vh;
-    justify-content: center;
-    background-color: #031926;
-    margin: 0;
-    display: none;
-  }
-
-  #openMenu {
-    margin-right: 5px;
-  }
-
-
-  #closeMenu {
-    /* posição no canto superior direito e fixo*/
-    position: fixed;
-    right: 15px;
-    /* distancia em pixels em relação a direita*/
-    top: 15px;
-  }
-
-  nav a {
-    border-radius: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 60px;
-  }
-
-  nav a:hover {
-    border: none;
-    background: #faebd7;
-    color: #031926;
-  }
-}
-
-
-
 @media screen and (max-width:610px) {
   header {
     flex-direction: column;
@@ -279,11 +168,19 @@ main {
   background-image: radial-gradient(#102430, #031926, #000);
   background-size: 100%;
   background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#seta{
+  height: 100%;
+  align-self: self-start;
 }
 
 .Dictionary-Content {
   display: flex;
-  width: 100%;
+  width: 80%;
   flex-wrap: wrap;
 }
 
