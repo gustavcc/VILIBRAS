@@ -326,6 +326,14 @@ aside {
     border-radius: 20px;
 }
 
+#dash {
+    background-image: linear-gradient(to right bottom, #55bbf6, #005d97);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #ffffff;
+}
+
 .perfil {
     display: flex;
     justify-content: center;

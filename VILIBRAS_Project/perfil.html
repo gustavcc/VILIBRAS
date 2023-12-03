@@ -1,61 +1,111 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="CSS/perfil.css">
-  <title>Perfil | VILIBRAS</title>
-  <link rel="icon" href="img/Logo VILIBRAS.png">
-  <link rel="stylesheet" href="CSS/questoes.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/perfil.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="icon" href="IMG/Logo VILIBRAS.png">
+    <title>Perfil | VILIBRAS</title>
 </head>
 <body>
-  <div vw class="enabled">
-    <div vw-access-button class="active"></div>
-    <div vw-plugin-wrapper>
-        <div class="vw-plugin-top-wrapper"></div>
-    </div>
-    </div>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+        </div>
 
-        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-  <script>
-    new window.VLibras.Widget('https://vlibras.gov.br/app');
-      </script>
-  <div class="profile-container">
-    <div class="profile-picture">
-      <img src="IMG/images.png" alt="Foto">
+            <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
+    <header>
+        <div id="logo">
+            <a href="perfil.html">VILIBRAS</a>
+            <a href="perfil.html"><img src="img/Logo VILIBRAS.png" alt="logo"></a>
+        </div>
+
+        <nav id="menu">
+            <button id="closeMenu"><i class="fa-solid fa-xmark"></i></button>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="aulas.html">Aulas</a>
+            <a href="dicionario.html">Dicionário</a>
+            <a href="questoes.html">Questões</a>
+            <a href="faq.html">FAQ</a>
+        </nav>
+
+        <div id="nav-right">
+            <div class="search-box">
+                <input type="text" class="search-text" placeholder="Pesquisar...">
+                <a class="search-btn" href="#">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+            </div>
+            <div class="user">
+                <a class="icon-user" href="perfil.html" target="_blank"><i class="fa-solid fa-user"></i></a>
+            </div>
+            <button id="openMenu"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </header>
+    <div class="container">
+        <div class="profile-card">
+            <div class="profile-header">
+                <div class="profile-image">
+                    <img src="imagens.png" alt="Foto">
+                </div>
+                <div class="profile-info">
+                    <div class="profile-name">Ellen Santos</div>
+                    <div class="profile-email">ellensantosag15@gmail.com</div>
+                    <div class="profile-bio">Olá, eu sou Ellen bla bla bla bla bla bla bla bla bla bla bla bla bla </div>
+                </div>
+            </div>
+            <div class="profile-body">
+                <h3>Dados do Usuário</h3>
+                <div class="profile-row">
+                    <label for="phone"><i class="fas fa-phone"></i> Telefone:</label>
+                    <input type="text" id="phone" name="phone">
+                </div>
+                <div class="profile-row">
+                    <label for="dob"><i class="fas fa-birthday-cake"></i> Data de Nascimento:</label>
+                    <input type="date" id="dob" name="dob">
+                </div>
+                <div class="profile-row">
+                    <label for="Senha"><i class="fas fa-lock"></i> Senha:</label>
+                    <input type="password" id="Senha" name="Senha">
+                </div>
+                <div class="profile-buttons">
+                    <button class="btn-change"><i class="fas fa-key"></i> Alterar Senha</button>
+                    <button class="btn-save"><i class="fas fa-save"></i> Salvar Alterações</button>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="profile-details">
-      <h2>Dados do Usuário</h2>
-      <br>
-      </h5><label for="name">Nome:</label></h5>
-      <input type="text" id="name" name="name"></h1>
-      <br>
-      <br>
-      <label for="Email">Email:</label>
-      <input type="text" id="Email" name="Email">
-      <br>
-      <br>
-      <label for="phone">Telefone:</label>
-      <input type="text" id="phone" name="phone">
-      <p>
-      <label for="dob">Data de Nascimento:</label>
-      <input type="date" id="dob" name="dob">
-      <br>
-      <br>
-      <label for="Senha">Senha:</label>
-      <input type="text" id="Senha" name="Senha">
-      <br>
-      <br>
-      <button>Alterar Senha</button>
-      <br>
-      <br>
-      <button>Salvar Alterações</button>
-    </div>
-  </div>
+    <footer>
+        <div class="footer-item">
+            <h2>VILIBRAS</h2>
+            <p><a href="#">Sobre</a></p>
+            <p><a href="#">Contato</a></p>
+            <p><a href="#">Serviços</a></p>
+            <p><a href="#">Política de Privacidade</a></p>
+        </div>
+        <div class="footer-item">
+            <h2>Ajuda</h2>
+            <p><a href="faq.html">FAQ</a></p>
+            <p><a href="faq.html">Enviados</a></p>
+        </div>
+        <div class="footer-item social">
+            <h2> Siga-nos </h2>
+            <ul>
+                <li> <a href="https://www.instagram.com/gustavoc_costa/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a></li>
+                <li> <i class="fa-brands fa-linkedin-in"></i> </li>
+                <li> <i class="fa-brands fa-youtube"></i> </li>
+                <li> <i class="fa-brands fa-twitter"></i> </li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>

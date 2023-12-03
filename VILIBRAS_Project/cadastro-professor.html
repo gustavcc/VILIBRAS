@@ -6,7 +6,7 @@
     <link rel="shortcut icon" href="IMG/Logo VILIBRAS.png" type="image/x-icon">
     <link rel="stylesheet" href="./CSS/cadastro.css">
     <!--  passar o js para ca <script src="../script/script-cadastro.js"></script> -->
-    <title>Cadastro - Aluno | VILIBRAS</title>
+    <title>Cadastro - Professor | VILIBRAS</title>
 </head>
 <body id="professor">
   <div class="vertical-navbar"></div>
@@ -68,12 +68,12 @@
       <!-- Conteúdo da segunda etapa do formulário -->
       <form>
         <label for="E-mail">Seu E-mail</label>
-        <input type="text" placeholder="E-mail" />
+        <input type="text" placeholder="E-mail" required>
         <label for="senha">Sua senha</label>
-        <input type="password" placeholder="Senha" />
+        <input type="password" placeholder="Senha" required>
         <label for="data-nascimento">Data de Nascimento:</label>
         <input type="date" id="data-nascimento" name="data-nascimento" required><br><br>
-        <button type="submit">Inscrição</button>
+        <button type="submit"><a href="dashboard.html">Inscrição</a></button>
         <label>
           <input type="checkbox" />
           Mantenha-me conectado
