@@ -363,14 +363,6 @@ main {
     box-sizing: border-box;
 }
 
-.btn:hover:not([disabled]) {
-    border: 1px solid #fff;
-}
-
-.btn:disabled{
-    cursor: no-drop;
-}
-
 #next-btn {
     background-image: linear-gradient(to right bottom, #031926, #04215b, #009dff);
     color: #fff;
