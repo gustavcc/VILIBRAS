@@ -35,13 +35,13 @@ body {
 
 }
 
-#foto{
+#foto {
     max-width: 20vw;
     position: absolute;
-    top:50px;
-    object-fit:scale-down;
-    transform: scale(0.5) rotate(0deg); 
-    transition: transform 3s ease-in-out; 
+    top: 50px;
+    object-fit: scale-down;
+    transform: scale(0.5) rotate(0deg);
+    transition: transform 3s ease-in-out;
     z-index: -1;
     opacity: 0.6;
 }
@@ -77,9 +77,9 @@ form {
     max-width: 300px;
 }
 
-label{
+label {
     margin: 10px 0px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: left;
 }
 
@@ -92,7 +92,7 @@ input {
 
 }
 
-select{
+select {
     text-align: center;
     color: gray;
     padding: 10px;
@@ -109,12 +109,12 @@ button {
     cursor: pointer;
 }
 
-#buttonDiv{
+#buttonDiv {
     padding: 10px;
     max-width: 300px;
     margin: 0 auto
-
 }
+
 .links {
 
     margin-top: 20px;
@@ -127,53 +127,59 @@ a {
 }
 
 
-@keyframes typing{
-    from{
-      width: 0;
+@keyframes typing {
+    from {
+        width: 0;
     }
-  }
+}
 
-  @keyframes blinking{
-    50%{
-      border-color: transparent;
+@keyframes blinking {
+    50% {
+        border-color: transparent;
     }
-  }
+}
 
-  @keyframes fadeIn{
+@keyframes fadeIn {
     0% {
-      opacity: 0;
-  }
-  100% {
-      opacity: 1;
-  }
-  }
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
 
 
-  @keyframes blendmode {
+@keyframes blendmode {
     0% {
         background-color: #404040;
     }
-    50% {
-        background-color: #007bff; 
-    }
-    100% {
-        background-color: #404040; 
-    }
-  }
 
-@media screen and (max-width:720px){
-    .login-container{
+    50% {
+        background-color: #007bff;
+    }
+
+    100% {
+        background-color: #404040;
+    }
+}
+
+@media screen and (max-width:720px) {
+    .login-container {
         height: 100vh;
         width: 100vw;
 
     }
-    .avatar{
+
+    .avatar {
         margin-top: 30px;
     }
-    #foto{
-        display:none
+
+    #foto {
+        display: none
     }
-    .links{
+
+    .links {
         font-size: 11px;
     }
 }

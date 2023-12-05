@@ -363,6 +363,10 @@ main {
     box-sizing: border-box;
 }
 
+.btn:hover {
+    border: 1px solid #fff;
+}
+
 #next-btn {
     background-image: linear-gradient(to right bottom, #031926, #04215b, #009dff);
     color: #fff;

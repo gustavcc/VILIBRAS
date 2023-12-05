@@ -314,8 +314,30 @@ main {
     justify-content: center;
     align-items: center;
     background-color: #009dff;
-    /* background-image: radial-gradient(transparent 5%,#0f547f,#102430) */
+    margin: 0;
+    padding: 0;
+    color: #fff;
     background-image: linear-gradient(to top, black, #031926, #102430);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.7s ease-in-out;
+    animation: blendmode 15s ease-in-out infinite alternate;
+}
+
+@keyframes blendmode {
+    0% {
+        background-color: #404040;
+    }
+
+    50% {
+        background-color: #007bff;
+    }
+
+    100% {
+        background-color: #404040;
+    }
 }
 
 .libras-text {
@@ -324,12 +346,39 @@ main {
     width: 90%;
     padding: 10% 5% 10% 5%;
     color: #ffffff;
+    transition: .3s ease-in-out;
 }
 
-.title-main {
+.libras-text h1 {
     font-size: 30pt;
-    padding-bottom: 3%;
-    font-weight: 800;
+    margin-bottom: 3rem ;
+    border-right: 4px solid;
+    width: 8.2ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s steps(8.2), blinking 1s infinite step-end alternate;
+}
+
+keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blinking {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .libras-text p {
@@ -673,6 +722,11 @@ span {
     .libras-main {
         height: autoF;
         justify-content: end;
+    }
+
+    .libras-main {
+        height: 100vh;
+        justify-content: center;
     }
 }
 
