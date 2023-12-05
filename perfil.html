@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/perfil.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="icon" href="IMG/Logo VILIBRAS.png">
+    <title>Perfil | VILIBRAS</title>
+</head>
+<body>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+        </div>
+
+            <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
+    <header>
+        <div id="logo">
+            <a href="perfil.html">VILIBRAS</a>
+            <a href="perfil.html"><img src="img/Logo VILIBRAS.png" alt="logo"></a>
+        </div>
+
+        <nav id="menu">
+            <button id="closeMenu"><i class="fa-solid fa-xmark"></i></button>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="aulas.html">Aulas</a>
+            <a href="dicionario.html">Dicionário</a>
+            <a href="questoes.html">Questões</a>
+            <a href="faq.html">FAQ</a>
+        </nav>
+
+        <div id="nav-right">
+            <div class="search-box">
+                <input type="text" class="search-text" placeholder="Pesquisar...">
+                <a class="search-btn" href="#">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+            </div>
+            <div class="user">
+                <a class="icon-user" href="perfil.html" target="_blank"><i class="fa-solid fa-user"></i></a>
+            </div>
+            <button id="openMenu"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </header>
+    <main>
+        <div class="profile-card">
+            <div class="profile-header">
+                <div class="profile-image">
+                    <img src="IMG/user_657052.png" alt="Foto">
+                </div>
+                <div class="profile-info">
+                    <div class="profile-name">Danyele de Oliveira Santana</div>
+                    <div class="profile-bio">Confirme ou edite seus dados cadastrais.</div>
+                </div>
+            </div>
+            <div class="profile-body">
+                <div class="profile-row">
+                    <i class="fa-solid fa-user"></i>
+                    <h2>Minha Conta</h2>
+                </div>
+                <div class="profiles">
+                    <!-- --- dados --- -->
+                    <div class="profile-dados">
+                        <div class="profile-row">
+                            <i class="fa-solid fa-server"></i>
+                            <h3>Dados Cadastrais</h3>
+                        </div>
+                        <div class="dados">
+                            <div class="profile-row">
+                                <p class="title-dados">Nome:</p>
+                                <p class="title-resp" id="nome">Danyele de Oliveira Santana</p>
+                            </div>
+                            <div class="profile-row">
+                                <p class="title-dados">Sexo:</p>
+                                <p class="title-resp"  id="sexo">Feminino</p>
+                            </div>
+                            <div class="profile-row">
+                                <p class="title-dados">Data de nascimento:</p>
+                                <p class="title-resp"  id="data">Junho 8, 1985</p>
+                            </div>
+                            <div class="profile-row">
+                                <p class="title-dados">Email:</p>
+                                <p class="title-resp"  id="email">Dany@gmail.com</p>
+                            </div>
+                            <div class="profile-row">
+                                <p class="title-dados">Celular:</p>
+                                <p class="title-resp"  id="celular">(77) 99999-0000</p>
+                            </div>
+                        </div>
+                        <div class="profile-buttons">
+                            <button class="btn-change"><i class="fas fa-key"></i> Alterar Senha</button>
+                            <button class="btn-save"><i class="fa-solid fa-pen-to-square"></i>Alterar dados</button>
+                        </div>
+                    </div>
+                    <!-- --- dados --- -->
+                    <div class="profile-tipo">
+                        <div class="profile-row">
+                            <i class="fa-solid fa-users"></i>
+                            <h3>Tipo de Cadastro</h3>
+                        </div>
+                        <div class="dados">
+                            <div class="profile-row">
+                                <p class="title-dados">Tipo de cadastro:</p>
+                                <p class="title-resp"  id="tipo">Aluno</p>
+                            </div>
+                            <div class="profile-row">
+                                <p class="title-dados">CPF:</p>
+                                <p class="title-resp"  id="cpf">111.222.333-44</p>
+                            </div>
+                        </div>
+                        <div class="profile-buttons">
+                            <button class="btn-save"><i class="fa-solid fa-pen-to-square"></i>Alterar dados</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-item">
+            <h2>VILIBRAS</h2>
+            <p><a href="#">Sobre</a></p>
+            <p><a href="#">Contato</a></p>
+            <p><a href="#">Serviços</a></p>
+            <p><a href="#">Política de Privacidade</a></p>
+        </div>
+        <div class="footer-item">
+            <h2>Ajuda</h2>
+            <p><a href="faq.html">FAQ</a></p>
+            <p><a href="faq.html">Enviados</a></p>
+        </div>
+        <div class="footer-item social">
+            <h2> Siga-nos </h2>
+            <ul>
+                <li> <a href="https://www.instagram.com/gustavoc_costa/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a></li>
+                <li> <i class="fa-brands fa-linkedin-in"></i> </li>
+                <li> <i class="fa-brands fa-youtube"></i> </li>
+                <li> <i class="fa-brands fa-twitter"></i> </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script type="text/javascript">
+
+        openMenu.addEventListener('click', () => {
+            menu.style.display = 'flex',
+            inscription.style.display = 'none'
+
+        })
+        // função quando algo é clicado
+        closeMenu.addEventListener('click', () => {
+            menu.removeAttribute('style'),
+            inscription.removeAttribute('style')
+        })
+
+    </script>
+</body>
+</html>
