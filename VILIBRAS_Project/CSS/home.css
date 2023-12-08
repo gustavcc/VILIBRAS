@@ -328,15 +328,15 @@ main {
 
 @keyframes blendmode {
     0% {
-        background-color: #404040;
+        background-color: #585858;
     }
 
     50% {
-        background-color: #007bff;
+        background-color: #2e93ff;
     }
 
     100% {
-        background-color: #404040;
+        background-color: #585858;
     }
 }
 
@@ -353,13 +353,13 @@ main {
     font-size: 30pt;
     margin-bottom: 3rem ;
     border-right: 4px solid;
-    width: 8.2ch;
+    width: 9ch;
     white-space: nowrap;
     overflow: hidden;
-    animation: typing 3s steps(8.2), blinking 1s infinite step-end alternate;
+    animation: typing 3s steps(9), blinking 1s infinite step-end alternate;
 }
 
-keyframes typing {
+@keyframes typing {
     from {
         width: 0;
     }

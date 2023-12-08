@@ -368,6 +368,7 @@ aside {
     height: 450px;
     overflow: hidden;
     border-radius: 20px;
+    transition: all 1s ease-in-out;
 }
 
 .containerSlide {
@@ -377,17 +378,26 @@ aside {
 }
 
 .containerSlide img {
+    /* filter: blur(5px); */
+    position: center;
     object-fit: cover;
     width: 100%;
     height: 100%;
 }
+
+/* .containerSlide div {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+} */
+
 
 /* .containerSlide #slide-img-1 {
     background-image: url('IMG/slide_1.jpg');
     background-position: center;
 }
 .containerSlide #slide-img-2 {
-    background-image: url(IMG/slide_2.jpg);
+    background-image: url('IMG/slide_2.jpg');
     background-position: center;
 }
 .containerSlide #slide-img-3 {
@@ -398,7 +408,7 @@ aside {
     background-image: url('IMG/slide_4.jpg');
     background-position: center;
 } */
-/* *----------------------------------------- */
+ /* *----------------------------------------- */
 
 .recepcao {
     width: 100%;
